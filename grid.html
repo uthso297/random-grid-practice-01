@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        .container {
+            display: grid;
+            height: 300px;
+            color: white;
+            grid-template-columns: repeat(5, auto);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        .cor {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .item-1 {
+            background-color: #ca316a;
+            grid-row: 1/span 1;
+        }
+
+        .item-2 {
+            background-color: #ca309e;
+            grid-row: 1/span 2;
+        }
+
+        .item-3 {
+            background-color: #ee6e61;
+            grid-column: 3/span 2;
+            grid-row: 1/span 4;
+        }
+
+        .item-4 {
+            background-color: #efc439;
+            grid-row: 1/span 1;
+        }
+
+        .item-5 {
+            background-color: #538c45;
+            grid-row: 2/span 1;
+        }
+
+        .item-6 {
+            background-color: #267d87;
+            grid-row: 2/span 1;
+        }
+
+        .item-7 {
+            background-color: #799a29;
+            grid-row: 3/span 1;
+        }
+        .item-8{
+            background-color: #488856;
+        }
+        .item-9{
+            background-color: #30cac2;
+            grid-column: 2/span 2;
+        }
+        .item-10 {
+            background-color: #30c990;
+            grid-column: 5/span 1;
+            grid-row: 3/span 1;
+        }
+
+        .item-11 {
+            background-color: #554079;
+            grid-column: 1/span 2;
+            grid-row: 4/span 1;
+        }
+
+        .item-12 {
+            background-color: #dd212f;
+            grid-column: 5/span 1;
+            grid-row: 4/span 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-1">1</div>
+        <div class="item-2">2</div>
+        <div class="item-3">3</div>
+        <div class="item-4">4</div>
+        <div class="item-5">5</div>
+        <div class="item-6">6</div>
+        <div class="item-7">7</div>
+        <div class="cor">
+            <div class="item-8">8</div>
+            <div class="item-9">9</div>
+        </div>
+        <div class="item-10">10</div>
+        <div class="item-11">11</div>
+        <div class="item-12">12</div>
+    </div>
+</body>
+
+</html>
